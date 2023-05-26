@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .message-area {
+            width: 50vw;
+            height: 75vh;
+            background-image: linear-gradient(rgb(238, 151, 151), rgb(230, 230, 150));
+            margin-left: auto;
+            margin-right: auto;
+            overflow: scroll;
+            padding-bottom: 5%;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+            justify-content: right;
+            border: 2px solid black;
+        }
+
+        #chat {
+            position: fixed;
+            bottom: 2%;
+            left: 35%;
+            border-radius: 5rem;
+            height: 5%;
+            width: 30%;
+            font-size: 140%; 
+            word-break: break-all;
+            padding: 1% 1%;
+            background-color: rgb(59, 58, 58);
+            color: white;
+        }
+
+        .text-area {
+            background-color: rgb(66, 199, 66);
+            height: fit-content;
+            width: fit-content;
+            max-width: 70%;
+            min-width: 20%;
+            color: white;
+            border-radius: 1rem;
+            position: relative;
+            left: -2%;
+            top: 80%;
+            margin-left: -3%;
+            margin-bottom: 2%;
+            padding-bottom: -4%;
+            margin-left: auto;
+        }
+        .text {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 7%;
+            font-size: 125%;
+        }
+
+        .time-area {
+            color: black;
+            position: relative;
+            left: 75%;
+            bottom: 5%;
+            width: fit-content;
+            height: fit-content;
+            font-size: 70%;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="message-area">
+        
+        <div class="text-area">
+            <p class="text">bottom, i am the bottom</p>
+        </div>
+        <input type="text" name="chat" id="chat"> 
+    </div>
+</body>
+<script src="message.js"></script>
+</html>

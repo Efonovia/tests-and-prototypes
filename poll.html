@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLL</title>
+    <style>
+        body {
+            font-family: "Poppins";
+            background: linear-gradient(to right,aquamarine, rgb(1, 141, 141));
+        }
+
+        .poll-box {
+            margin: auto;
+            height: 50%;
+            width: 40%;
+            background-color: rgba(218, 204, 204, 0.74);
+            position: absolute;
+            top: 25%;
+            left: 30%;
+            border-radius: 1rem;
+        }
+
+        .question {
+            text-align: center;
+        }
+
+        .answers {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .answers > div {
+            /* background-color: rgba(24, 9, 236, 0.5); */
+            cursor: pointer;
+            margin-top: 1rem;
+            width: 85%;
+            margin-left: 5%;
+            padding-left: 5%;
+            border: 1px solid white;
+            color: white;
+            border-radius: 0.5rem;
+        }
+
+        .answer:hover {
+            background-color: rgba(24, 9, 236, 0.85);
+        }
+
+        .answers > div > span {
+            position: absolute;
+            left: 85%;
+        }
+
+        .votes {
+            position: relative;
+            left: 5%;
+            top: 10%;
+        }
+
+        .ans1percent {
+            background-color: red;
+            width: 89.4%;
+            height: 6.5%;
+            position: absolute;
+            margin-left: -79.5%;
+            margin-top: 0.25%;
+            border-radius: 0.5rem;
+            z-index: -1;
+            display: none;
+        }
+
+        .ans2percent {
+            background-color: red;
+            width: 89.4%;
+            height: 6.5%;
+            position: absolute;
+            margin-left: -79.5%;
+            margin-top: 0.25%;
+            border-radius: 0.5rem;
+            z-index: -1;
+            display: none;
+        }
+
+        .ans3percent {
+            background-color: red;
+            width: 89.4%;  
+            height: 6.5%;
+            position: absolute;
+            margin-left: -79.5%;
+            margin-top: 0.25%;
+            border-radius: 0.5rem;
+            z-index: -1;
+            display: none;
+        }
+
+        .ans4percent {
+            background-color: red;
+            width: 89.4%;
+            height: 6.5%;
+            position: absolute;
+            margin-left: -79.5%;
+            margin-top: 0.25%;
+            border-radius: 0.5rem;
+            z-index: -1;
+            display: none;
+        }
+
+        /* .ans1 {
+            background-color: green;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="poll-box">
+        <h3 class="question">Favourite fruit?</h3>
+        <div class="answers">
+            <div class="ans1 answer">Apple <span class="ans1percent"> </span> <span class="ans1amount"></span> </div>
+            <div class="ans2 answer">Orange <span class="ans2percent"> </span> <span class="ans2amount"></span> </div>
+            <div class="ans3 answer">Grape <span class="ans3percent"> </span> <span class="ans3amount"></span> </div>
+            <div class="ans4 answer">Pineapple <span class="ans4percent"> </span> <span class="ans4amount"></span> </div>
+        </div>
+        <div class="votes">0 Votes</div>
+    </div>
+</body>
+<script src="poll.js"></script>
+</html>

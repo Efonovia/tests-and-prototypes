@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    .grid-container {
+        height: 600px;
+        width: 800px;
+        display: grid;
+        grid-template-areas: 
+        "nav nav nav"
+        "side content ad"
+        "footer footer footer";
+        background-color: darksalmon;
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: yellow;
+    }
+
+    .side {
+        grid-area: side;
+        background-color: blue;
+    }
+
+    .content {
+        grid-area: content;
+        background-color: red;
+    }
+
+    .ad {
+        grid-area: ad;
+        background-color: green;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: black;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="nav"></div>
+        <div class="side"></div>
+        <div class="content"></div>
+        <div class="ad"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
